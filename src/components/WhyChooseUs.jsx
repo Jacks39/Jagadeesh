@@ -11,26 +11,53 @@ const statistics = [
 function WhyChooseUs() {
   return (
     <section className="bg-[#d5d5df] py-8 sm:py-10">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[900px] px-4">
 
         <h2 className="text-center text-sm font-bold sm:text-base">
-          Why Choose Us?
+          Why Choose Us ?
         </h2>
 
-        <div className="mt-7 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-7 grid grid-cols-12 gap-x-4 gap-y-8">
 
-          {statistics.map(([number, title]) => (
+          {/* First 4 cards */}
+          {statistics.slice(0, 4).map(([number, title]) => (
             <div
               key={title}
-              className="rounded-md bg-white px-3 py-3 text-center shadow-md"
+              className="col-span-3 flex justify-center"
             >
-              <p className="text-2xl font-bold text-[#18549a] sm:text-3xl">
-                {number}
-              </p>
+              <div className="h-[87px] w-[160px] rounded-[10px] bg-white px-3 py-3 text-center shadow-md sm:w-[207px]">
+                <p className="text-2xl font-bold text-[#18549a]">
+                  {number}
+                </p>
 
-              <p className="mt-1 text-[9px] font-semibold sm:text-[10px]">
-                {title}
-              </p>
+                <p className="mt-1 text-[9px] font-semibold">
+                  {title}
+                </p>
+              </div>
+            </div>
+          ))}
+
+          {/* Bottom 3 cards */}
+          {statistics.slice(4).map(([number, title], index) => (
+            <div
+              key={title}
+              className={`col-span-3 flex justify-center ${
+                index === 0
+                  ? "col-start-2"
+                  : index === 1
+                  ? "col-start-6"
+                  : "col-start-10"
+              }`}
+            >
+              <div className="h-[87px] w-[160px] rounded-[10px] bg-white px-3 py-3 text-center shadow-md sm:w-[207px]">
+                <p className="text-2xl font-bold text-[#18549a]">
+                  {number}
+                </p>
+
+                <p className="mt-1 text-[9px] font-semibold">
+                  {title}
+                </p>
+              </div>
             </div>
           ))}
 

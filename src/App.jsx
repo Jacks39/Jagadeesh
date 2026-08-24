@@ -7,18 +7,19 @@ import Brands from "./components/Brands";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Doctor from "./components/Doctor";
 
 function App() {
   return (
     <div className="min-h-screen bg-[#dce8ec] text-black">
-
+     
       <Hero />
+      <Doctor />
       <Availability />
       <Departments />
-      
-  
       <WhyChooseUs />
-      <NursingSupport />
+    
+       <NursingSupport />
       <Brands />
       <Products />
       <Testimonials />

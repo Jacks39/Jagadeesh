@@ -1,39 +1,35 @@
-import productImageOne from "../assets/Frame 376 (1).png";
-import productImageTwo from "../assets/Group 125.png";
-import productImageThree from "../assets/Group 126.png";
-import productImageFour from "../assets/Group 127.png";
-import productImageFive from "../assets/Group 128.png";
-import productImageSix from "../assets/Group 129.png";
+import productImage from "../assets/Group 32.png";
+
 const products = [
   {
     name: "Medical Product",
     price: "₹499",
-    image: productImageOne,
+    image: productImage,
   },
   {
     name: "Medical Product",
     price: "₹599",
-    image: productImageTwo,
+    image: productImage,
   },
   {
     name: "Medical Product",
     price: "₹699",
-    image: productImageThree,
+    image: productImage,
   },
   {
     name: "Medical Product",
     price: "₹799",
-    image: productImageFour,
+    image: productImage,
   },
   {
     name: "Medical Product",
     price: "₹899",
-    image: productImageFive,
+    image: productImage,
   },
   {
     name: "Medical Product",
     price: "₹999",
-    image: productImageSix,
+    image: productImage,
   },
 ];
 

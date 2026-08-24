@@ -1,4 +1,4 @@
-import productImageOne from "../assets/Frame 376 (1).png";
+import productImageOne from "../assets/Nivea (2021) Logo (PNG720p) - Vector69Com 1.png";
 import productImageTwo from "../assets/Group 125.png";
 import productImageThree from "../assets/Group 126.png";
 import productImageFour from "../assets/Group 127.png";
@@ -23,12 +23,12 @@ function Brands() {
           Our Top Brands
         </h2>
 
-        <div className="mt-7 flex flex-wrap justify-center gap-5">
+        <div className="mt-7 grid grid-cols-2 justify-items-center gap-6 sm:grid-cols-3 lg:grid-cols-6">
 
           {brandImages.map((brand, index) => (
             <div
               key={index}
-              className="flex h-20 w-20 items-center justify-center rounded-md bg-white p-3 shadow-md sm:h-24 sm:w-24"
+              className="flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 shadow-md"
             >
               <img
                 src={brand}
